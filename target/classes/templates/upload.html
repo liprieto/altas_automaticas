@@ -1,0 +1,85 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<meta charset="UTF-8">
+	<title>Altas Automáticas</title>
+<!-- CSS for Bootstrap -->
+<link
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+	rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h2>Altas Automáticas - Soporte y Análisis</h2>
+		<hr>
+
+
+
+
+		<form action="/upload" method="post"
+			enctype="multipart/form-data">
+			<div class="form-group">
+				<label>ALTAS OSDE</label> <input type="file" name="file">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit" id="b1">Cargar
+					archivo</button>
+				<div id="alertMsg" style="color: black; font-size: 18px;"></div>
+			</div>
+		</form>
+		<br />
+
+		<div>
+			<label>Últimas altas realizadas</label>
+			<table class='table'>
+				<thead>
+					<tr>
+						<th>CodigoPOSDE</th>
+						<th>Nombre</th>
+						<th>Cuit</th>
+						<th>Terminal</th>
+						<th>Filial</th>
+						<th>Accion</th>
+
+					</tr>
+				</thead>
+
+				<tbody>
+					<tr>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+						<td></td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+
+		<!-- 
+
+		<form action="/uploadfile2" method="post"
+			enctype="multipart/form-data">
+			<div class="form-group">
+				<label>ALTAS PRUEBA (futura)</label> <input type="file" name="file">
+			</div>
+			<div class="form-group">
+				<button class="btn btn-primary" type="submit" id="b2">Cargar
+					archivo</button>
+
+				<div id="alertMsg1" style="color: black; font-size: 18px;"></div>
+
+			</div>
+		</form>
+		
+
+
+
+		<br> <br> <br> <a href="javascript:sentData()">Descargar archivo</button>
+		-->
+	</div>
+</body>
+</html>
+
+
+
